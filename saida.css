@@ -1,0 +1,417 @@
+:root {
+    --color-primary: #a28a8a;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:var(--color-black-1);
+    font-family: "Pacifico", cursive;
+    font-weight: 800;
+    font-style: normal;   
+  }
+  
+  body {
+    font-family: "Pacifico", cursive;
+    font-weight: 800;
+    font-style: normal;   
+    background-color: #f3f3f3;
+
+  }
+  
+  .logo {
+width:120px;
+height: max-content;
+  }
+  
+  
+  .menu-bar {
+    background-color:rgb(226, 222, 222);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  
+    position: relative;
+  }
+  /* to center the menu */
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    padding: 10px 30px;  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color:rgb(255, 0, 0);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color:#6d3a3a;
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:rgb(226, 222, 222);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+
+  
+  /*site*/
+  /* BTN */
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 10px 24px;
+}
+
+.btn-brand {
+  background-color: var(--c-brand);
+  border-color: var(--c-brand);
+  color: white;
+}
+
+.btn-brand:hover {
+  background-color: var(--c-brand-light);
+  border-color: var(--c-brand-light);
+  color: white;
+}
+
+
+/* HERO */
+#hero {
+  position: relative;
+  background: url('https://scontent.ftun9-1.fna.fbcdn.net/v/t31.18172-8/12240339_1072754516088166_42880207566754755_o.png?_nc_cat=102&ccb=1-7&_nc_sid=300f58&_nc_ohc=blJQadn0P4IAX-YgkCB&_nc_ht=scontent.ftun9-1.fna&oh=00_AfDBpaxs-a6Jyvr9EbNBUHbnJ7v9z54AaOI9XvHiIvWywg&oe=65FDFE07');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+  z-index: 1;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* Rest of your existing styles... */
+
+/*corrected about 2 grids*/
+/* Additional styling for About section */
+/* Additional styling for About section */
+.about-heading {
+  font-size: 3rem;
+  color: #ff0000; /* Red color */
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* Increased margin for better separation */
+}
+
+.about-description {
+  font-size: 1.6rem; /* Increased font size for better readability */
+  color: var(--color-black-1);
+  line-height: 1.8; /* Increased line height for better spacing */
+}
+
+/* Style the image to be responsive */
+.img-fluid {
+  width: 100%;
+  max-width: 500px; /* Adjust the maximum width as needed */
+  border-radius: 15px; /* Add rounded corners */
+  margin-top: 5%;
+  margin-left: 10%; /* Adjust margin-left for better alignment */
+}
+/*sakkarna el about pic w aka jomla*/
+
+.row{
+  margin-left: 5%;
+}
+
+
+
+.about {
+  margin-top: 20px;
+  color: var(--c-dark);
+  font-size: 2.5rem;
+}
+
+
+.about{
+  margin-top: 5%;
+}
+
+/* SECTION TITLE */
+.section-title {
+  margin-bottom: 60px;
+  margin-top: 10%;
+  color: #141d28;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--c-brand);
+  margin: 16px auto 24px auto;
+}
+
+.section-title p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ICONBOX */
+.iconbox {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--c-brand-rgb), 0.1);
+  color: var(--c-brand);
+  font-size: 34px;
+  flex: none;
+}
+
+
+/* CONTACT */
+#contact {
+  position: relative;
+  z-index: 2;
+}
+
+#contact::after {
+  content: "";
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/counter.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#contact .form-control {
+  border-radius: 0;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--c-brand);
+}
+
+/* Additional styling for Footer */
+footer {
+  padding-top: 80px; /* Adjusted padding */
+  padding-bottom: 40px;
+}
+
+.footer-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 40px;
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer li,
+footer p,
+footer a {
+  color: rgba(255, 255, 255, 0.9); /* Adjusted color */
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: #fff; /* Adjusted line color */
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: aliceblue;
+}
+
+.social-icons a:hover {
+  background-color: #5b5454; /* Adjusted hover background color */
+  color: white;
+}
+
+.bg-red {
+  background-color: #9e2727; /* Adjusted red color */
+}
+
+/* Product Card Styles */
+.product-card {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  padding: 20px;
+  background-color: #fff; /* Set your desired background color */
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.product-info h5 {
+  margin-top: 10px;
+}
+
+.product-info p {
+  margin-bottom: 15px;
+}
+
+
+.product-info a:hover {
+  background-color: var(--c-brand-rgb);
+}
+
+
+
+/*icons for position*/
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info li i {
+  color: var(--c-brand); /* You can adjust the color */
+  margin-right: 10px; /* Added spacing between icon and text */
+  float:inline-start
+}
+
+.imgFoot{
+  width:110px;
+  height:70px;
+}
+
+
+/* end of contact*/ 
+
+/*contact additonal chgpt*/
+/* Additional styling for contact section */
+#contact {
+  padding-bottom: 80px; /* Adjusted padding */
+}
+
+.section-title h1 {
+  color: var(--c-brand); /* You can adjust the color */
+}
+
+.line {
+  background-color: var(--c-brand); /* You can adjust the color */
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-color: var(--c-brand); /* You can adjust the color */
+}
+
+.btn-brand {
+  background-color: var(--c-brand); /* You can adjust the color */
+  border-color: var(--c-brand); /* You can adjust the color */
+}
+
+.btn-brand:hover {
+  background-color: darken(var(--c-brand), 10%); /* Darken the color on hover */
+  border-color: darken(var(--c-brand), 10%); /* Darken the color on hover */
+}
+/*end of addtnl*/
+
+button {
+  background-color: #e44d26; /* Nike orange color */
+  color: white;
+  padding: 12px 24px; /* Increase padding for a larger button */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+.img-fluid{
+filter: brightness(60%);
+border-radius: 50%;
+margin-top: 10%;
+}
